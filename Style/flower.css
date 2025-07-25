@@ -178,6 +178,61 @@ button{
 
 
 
+.lover-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 120px 20px;
+  /* background-color: #f5f7fc; */
+  flex-wrap: wrap;
+}
+
+.lover-image-wrapper {
+  position: relative;
+  flex: 1 1 400px;
+  max-width: 540px;
+}
+
+.lover-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -100px;
+  right: -70px;
+  width: 50%;
+}
+
+.lover-text {
+  max-width: 540px;
+  margin-top: 5px;
+}
+
+.lover-text h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.lover-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+
+
+
 @media screen and (max-width:430px){
     .nav-item{
         display: none;
@@ -256,5 +311,8 @@ button{
   .cart-button {
     padding: 10px 0;
     font-size:13px;
+}
+.trusted-badge{
+    display: none;
 }
 }
