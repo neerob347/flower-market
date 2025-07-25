@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.display-flex{
+    display: flex;
+}
+
+.text-gray{
+    color: rgba(137, 135, 161, 1);
+}
+.text-black{
+    color:rgba(37, 36, 50, 1) ;
+}
+/* header styles */
+
+
+/* navbar related style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.nav-item{
+list-style: none;
+margin-right: 48px;   
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.navbar{
+    max-width: 1140px;
+      margin: 0 auto; 
+}
+button{
+    border: none;
+    font-size:20px;
+    background: none;
+}
+
+
+
+
+.flower-banner {
+  display: flex;
+  max-width: 1140px;
+  margin: 120px auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+}
+
+.flower-text {
+  max-width: 570px;
+  
+}
+
+.flower-text h1 {
+  font-size: 65px;
+  font: 700;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.flower-text .bold {
+  font-weight: 700;
+  color: #000;
+}
+
+.flower-text .orange {
+  font-weight: 700;
+  color:rgba(233, 90, 8, 1);
+}
+
+.flower-text p {
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.flower-image img {
+  max-width: 450px;
+  height: auto;
+}
+
+
+
+@media screen and (max-width:430px){
+    .nav-item{
+        display: none;
+    }
+    .nav-btn{
+        margin-top: 26px
+    }
+ 
+}
+
+
+
+@media (max-width: 430px) {
+  .flower-banner {
+    flex-direction: column-reverse;
+    padding: 40px 0; 
+  }
+
+  .flower-image {
+    width: 100%;          
+    padding: 0;           
+    margin: 0;             
+  }
+
+  .flower-image img {
+    width: 100%;
+    height: auto;
+    display: block;        
+  }
+
+  .flower-text {
+    padding: 0 20px;      
+    margin-top: 35px;
+    text-align: left;
+  }
+
+  .flower-text h1 {
+    font-size: 24px;
+    font: 700;
+  }
+
+  .flower-description {
+    font-size: 14px;
+    width: 360px;
+    height: 68px;
+  }
+}
