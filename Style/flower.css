@@ -55,8 +55,6 @@ button{
 }
 
 
-
-
 .flower-banner {
   display: flex;
   max-width: 1140px;
@@ -98,8 +96,6 @@ button{
   max-width: 450px;
   height: auto;
 }
-
-
 
 
 .products-section {
@@ -231,15 +227,10 @@ button{
 
 
 
-
-
-
 .deals-section {
   max-width: 1140px;
   margin: 0 auto;
   padding: 60px 20px;
-
-
 }
 .deals-header p{
     font-size: 22px;
@@ -284,6 +275,9 @@ button{
   align-items: center;
   justify-content: center;
 }
+.deal-box  {
+  filter: brightness(90%);
+}
 
 .deal-box.small {
     width: 367px;
@@ -325,9 +319,6 @@ button{
   font-weight: bold;
   cursor: pointer;
 }
-
-
-
 
 
 .newsletter-section {
@@ -385,6 +376,63 @@ button{
 
 
 
+.footer {
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footer-left {
+  max-width: 359px;
+  height: 173px;
+}
+
+.footer-logo {
+  width: 130px;
+  margin-bottom: 2px;
+
+}
+
+.footer-left p {
+  color: #6B7280;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-links ul,
+.footer-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-features li {
+  color: #6B7280;
+  margin-bottom: 32px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
 
 @media screen and (max-width:430px){
     .nav-item{
@@ -398,7 +446,7 @@ button{
 
 
 
-@media (max-width: 430px) {
+@media screen and (max-width: 430px) {
   .flower-banner {
     flex-direction: column-reverse;
     padding: 40px 0; 
@@ -437,9 +485,6 @@ button{
 
 
 
-
-
-
 @media screen and (max-width: 430px) {
     
  
@@ -472,10 +517,17 @@ button{
 
 
 
-@media (max-width: 430px) {
+@media screen and (max-width: 430px) {
   .deals-container {
     flex-direction: column;
   }
+  .deals-section{
+    margin-left: 5px;
+  }
+
+.deal-box  {
+  filter: brightness(90%);
+}
 
   .deal-box.large {
     height:172px;
@@ -505,9 +557,7 @@ button{
 }
 
 
-
-
-@media (max-width: 430px) {
+@media screen and (max-width: 430px) {
   .newsletter-section {
     padding-left: 0px;
     height: 275px;
@@ -549,5 +599,39 @@ button{
     background-color: rgba(233, 90, 8, 1);
     border: none;
     color: white;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-features,
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-links ul,
+  .footer-features ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 24px;
+  }
+
+  .footer-links li,
+  .footer-features li {
+    width: 45%;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 10px;
   }
 }
